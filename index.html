@@ -5,15 +5,10 @@
 </head>
 <body ng-app="app">
 
-	<div ng-controller="BookCtrl">
-		<div ng-repeat="book in books">
-			<h3>{{book.title}}</h3>
-			<h4>Type: {{book.type}}</h4>
-			<p>Price: {{book.price}}</p>
-		</div>
-	</div>
+<div ng-view></div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.js"></script>
 	<script src="app/app.js"></script>
 	<script src="app/controllers/bookCtrl.js"></script>
 	<script src="app/factories/guideFactory.js"></script>
